@@ -1,0 +1,1462 @@
+body {
+font-family: 'Almarai', sans-serif;
+    letter-spacing: 0.05em;
+}
+
+
+
+
+/*Generic Classes*/
+
+.nav-space {
+    padding-top: 75px;
+}
+
+.page-padding {
+    padding-left: 65px;
+    padding-right: 65px;
+}
+
+.CTA-section {
+    background: #FF584D;
+    text-align: center;
+    color: #fff;
+    padding: 120px 40px;
+}
+
+.CTA-section h2 {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.CTA-section p {
+    margin: 40px auto;
+    max-width: 700px;
+    line-height: 2.1em;
+}
+
+.CTA-section .contactus {
+    color: #fff;
+    text-decoration: none;
+}
+
+.CTA-section .contactus div {
+    border: solid 1px #fff;
+    width: 250px;
+    text-align: center;
+    padding: 20px 0;
+    margin: 0 auto;
+}
+
+.CTA-section .contactus div:hover {
+    background: #fff;
+    color: #FF584D;
+    border: solid 1px #fff;
+}
+
+
+
+/*Large Desktop*/
+
+/*Navigation*/
+
+nav {
+    background: #FF584D;
+    padding: 25px 0;
+    position: fixed;
+    top: 0;
+    left;
+    0;
+    width: 100%;
+    z-index: 100;
+}
+
+nav .flex-1 {
+    float: left;
+    margin-left: 65px;
+}
+
+nav .flex-2 {
+    float: right;
+    margin-top: 16px;
+    margin-right: 65px;
+}
+
+nav .flex-1 img {
+    width: 150px;
+    float: left;
+}
+
+nav .flex-1 p {
+    float: left;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 16px;
+    margin-left: 50px;
+}
+
+.desktop-nav li {
+    display: inline;
+    padding-left: 25px;
+    font-size: 14px;
+    text-align: right;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav li:hover {
+    opacity: 0.5;
+}
+
+.current-page {
+    font-weight: 600;
+}
+
+
+.desktop-nav {
+    display: block;
+}
+
+#burger-button {
+    display: none;
+    position: absolute;
+    top: 22px;
+    right: 25px;
+    z-index: 100;
+}
+
+#mobileMenu {
+    display: block;
+    background: #FF584D;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 50;
+
+    -webkit-transition: all .3s ease-in-out 0s;
+    transition: all .3s ease-in-out 0s;
+}
+
+.mobileMenuInactive {
+    left: 100%;
+}
+
+.mobileMenuActive {
+    left: 0;
+}
+
+#mobileMenuUl {
+    -webkit-transition: all .2s linear 0.3s;
+    transition: all .2s linear 0.3s;
+}
+
+.UlTransparent {
+    opacity: 0;
+}
+
+.UlOpaque {
+    opacity: 1;
+}
+
+#mobileMenu ul {
+    margin-left: 45px;
+    margin-top: 100px;
+}
+
+#mobileMenu li {
+    margin: 40px 0;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+/*Homepage Intro*/
+
+.homepage-intro-img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -100;
+    height: 100vh;
+    width: 100%;
+    background-image: url('../img/homepage/homepage-intro.jpg');
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+.homepage-intro {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.homepage-intro h1 {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    margin-top: -15px;
+
+    color: #fff;
+
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 1.3em;
+
+    height: 130px;
+}
+
+.homepage-intro img {
+    position: absolute;
+    width: 40px;
+    bottom: 50px;
+    left: 50%;
+    margin-left: -20px;
+}
+
+/*Homepage About*/
+
+.homepage-about {
+    background: #fff;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    overflow: hidden;
+    position: relative;
+    min-height: 70vh;
+}
+
+.homepage-about .flex-1 {
+    width: 40%;
+    float: right;
+}
+
+.homepage-about .flex-1 h1 {
+    font-size: 20px;
+}
+
+.homepage-about .flex-1 h2 {
+    font-size: 36px;
+    line-height: 1.2em;
+    font-weight: 600;
+    margin: 50px 0;
+    color: #FF584D;
+}
+
+.homepage-about .flex-1 p {
+    font-size: 18px;
+    line-height: 1.5em;
+    margin: 50px 0;
+    color: #4A4A4A;
+}
+
+.homepage-about .flex-1 .CTA {
+    color: #4A4A4A;
+    text-decoration: none;
+
+}
+
+.homepage-about .flex-1 .CTA div {
+    padding-bottom: 5px;
+    border-bottom: solid 2px #4A4A4A;
+    width: 100px;
+	margin-left: 50px;
+
+    -webkit-transition: all .1s ease-in-out 0s;
+    transition: all .1s ease-in-out 0s;
+}
+
+.homepage-about .flex-1 .CTA div:hover {
+    border-bottom: solid 4px #FF584D;
+}
+
+.homepage-about .flex-2 {
+    height: 87vh;
+    width: 60%;
+    float: right;
+    background-image: url('../img/homepage/homepage-about.jpg');
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+/*Homepage Services*/
+
+.homepage-services {
+    height: 100vh;
+    background: #000;
+}
+
+.homepage-services > div {
+    width: 33.333%;
+    float: left;
+    height: 50vh;
+}
+
+.homepage-services > div .img {
+    opacity: 0.2;
+}
+
+.homepage-services > div .img:hover {
+    opacity: 0.4;
+}
+
+.homepage-services .flex-1 .img {
+    height: 50vh;
+    background-image: url('../img/homepage/services-mepconstructionservices.jpg');
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+.homepage-services .flex-2 .img {
+    height: 50vh;
+    background-image: url('../img/homepage/services-finishingservices.jpg');
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+.homepage-services .flex-3 .img {
+    height: 50vh;
+    background-image: url('../img/homepage/services-procurementservices.jpg');
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+.homepage-services .flex-4 .img {
+    height: 50vh;
+    background-image: url('../img/homepage/services-projectmanagement.jpg');
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+.homepage-services .flex-5 .img {
+    height: 50vh;
+    background-image: url('../img/homepage/services-retail.jpg');
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+.homepage-services .flex-6 .img {
+    height: 50vh;
+    background-image: url('../img/homepage/services-agency.jpg');
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+.homepage-services h2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    margin-top: -27vh;
+}
+
+
+/*Homepage Contact*/
+
+.homepage-contact {
+    padding: 100px 0;
+    background: #fff;
+}
+
+.homepage-contact h1 {
+    text-align: center;
+    font-size: 200px;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    color: #ececec;
+
+    position: absolute;
+    width: 100%;
+    margin-top: 190px;
+}
+
+.homepage-contact .half-section {
+    width: 50%;
+    margin-left: 50%;
+    position: relative;
+    z-index: 10;
+}
+
+.homepage-contact h2 {
+    color: #FF584D;
+    font-size: 36px;
+    line-height: 1.2em;
+    font-weight: 600;
+    margin-top: 100px;
+}
+
+.homepage-contact p {
+    color: #4A4A4A;
+    font-size: 18px;
+    line-height: 1.5em;
+    margin: 30px 0;
+    width: 500px;
+}
+
+.homepage-contact .letstalk {
+    color: #4A4A4A;
+    text-decoration: none;
+}
+
+.homepage-contact .letstalk div {
+    border: solid 1px #4A4A4A;
+    width: 250px;
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 40px;
+}
+
+.homepage-contact .letstalk div:hover {
+    background: #FF584D;
+    color: #fff;
+    border: solid 1px #FF584D;
+}
+
+.homepage-contact h3 {
+    font-size: 16px;
+    margin-bottom: 100px;
+}
+
+.homepage-contact h3 a {
+    color: #4A4A4A;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.homepage-contact h3 a:hover {
+    color: #FF584D;
+}
+
+.homepage-contact .border {
+    height: 150px;
+    border-left: solid 1px #979797;
+}
+
+
+/*Generic*/
+
+.page-intro {
+    height: 70vh;
+    margin-top: 98px;
+    position: relative;
+}
+
+.page-intro-img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -100;
+    height: 100vh;
+    width: 100%;
+}
+
+.page-intro h1 {
+    color: #fff;
+    font-size: 50px;
+    font-weight: 800;
+
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    margin-top: -25px;
+
+    height: 50px;
+}
+
+/*Products & Services*/
+
+.products-intro-img {
+    background-image: url('../img/services/services-intro.jpg');
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+.product-list {
+    background: #fff;
+    padding: 65px;
+}
+
+.product-list .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-list .container > div {
+    width: 30%;
+}
+
+.product-list img {
+    width: 100%;
+}
+
+.product-list h2 {
+    color: #4A4A4A;
+    font-size: 26px;
+    line-height: 1.4;
+    font-weight: 600;
+    margin: 45px 0 40px 0;
+}
+
+.product-list p {
+    color: #4A4A4A;
+    font-size: 18px;
+    line-height: 1.7em;
+    margin: 40px 0;
+}
+
+.product-list a {
+    color: #FF584D;
+    text-decoration: none;
+}
+
+
+
+/*About Us - Company*/
+
+.about-company-intro-img {
+    background-image: url('../img/about/about-company-bg.jpg');
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+.about-nav {
+    width: 600px;
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    margin-left: -300px;
+    overflow: hidden;
+}
+
+.about-nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.about-nav div {
+    text-align: center;
+    width: 50%;
+    float: left;
+    padding-bottom: 20px;
+
+    -webkit-transition: all .3s ease-in-out 0s;
+    transition: all .3s ease-in-out 0s;
+}
+
+.about-nav div:hover {
+    border-bottom: solid 2px #fff;
+}
+
+.about-nav .selected {
+    border-bottom: solid 2px #fff;
+}
+
+
+.aboutus-company {
+    background: #fff;
+    padding: 65px;
+}
+
+.aboutus-company .about-us,
+.aboutus-company .objectives,
+.aboutus-company .mission {
+    overflow: hidden;
+}
+
+
+
+.aboutus-company h1 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 65px;
+}
+
+.aboutus-company h2 {
+    font-size: 30px;
+    line-height: 1.5em;
+    font-weight: 600;
+    margin-bottom: 65px;
+    margin-right: 60px;
+    color: #FF584D;
+    float: right;
+    width: 50%;
+}
+
+
+.aboutus-company h3 {
+    font-size: 25px;
+    line-height: 1.5em;
+    font-weight: 600;
+    margin-bottom: 65px;
+    margin-right: 60px;
+    color: #FF584D;
+    float: left;
+    width: 50%;
+}
+
+.aboutus-company p {
+    font-size: 18px;
+    line-height: 1.7em;
+    margin-bottom: 65px;
+    color: #4A4A4A;
+}
+
+.aboutus-company .side-image {
+    width: 600px;
+}
+
+.aboutus-company .full-width {
+    width: 100%;
+}
+
+.aboutus-company .objectives,
+.aboutus-company .mission {
+    margin-top: 65px;
+
+}
+
+.aboutus-company .objectives h1,
+.aboutus-company .mission h1 {
+    color: #FF584D;
+}
+
+
+
+.aboutus-company .objectives h2,
+.aboutus-company .mission h2 {
+    color: #4A4A4A;
+}
+
+.aboutus-company .objectives img {
+    float: left;
+    margin-right: 60px;
+}
+
+.aboutus-company .mission img {
+    float: right;
+}
+
+
+
+
+
+.aboutus-company-keystosuccess {
+    background: #eeeeee;
+    padding: 65px;
+    overflow: hidden;
+}
+
+.aboutus-company-keystosuccess h1 {
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: 600;
+    color: #4A4A4A;
+    margin-bottom: 45px;
+}
+
+.aboutus-company-keystosuccess p {
+    font-size: 14px;
+    line-height: 2.3em;
+}
+
+.aboutus-company-keystosuccess p b {
+    font-weight: 600;
+}
+
+.aboutus-company-keystosuccess p img {
+    width: 25px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.aboutus-company-keystosuccess > img {
+    width: 400px;
+    float: right;
+    margin-left: 60px;
+}
+
+
+
+
+
+
+/*About Us - Founders*/
+
+.about-founders-intro-img {
+    background-image: url('../img/about/about-founders-bg.jpg');
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+.aboutus-founders {
+    padding: 65px;
+    color: #4A4A4A;
+    background: #fff;
+}
+
+.aboutus-founders .container {
+    display: flex;
+}
+
+.aboutus-founders .flex-1,
+.aboutus-founders .flex-2 {
+    width: 50%;
+}
+
+.aboutus-founders img {
+    width: 400px;
+}
+
+.aboutus-founders h1 {
+    font-size: 26px;
+    font-weight: 600;
+    color: #FF584D;
+    margin: 25px 0;
+}
+
+.aboutus-founders p {
+    font-size: 14px;
+    line-height: 1.9em;
+    color: #4A4A4A;
+    max-width: 700px;
+}
+
+.aboutus-founders p span {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+
+/*Contact*/
+
+.contact-page {
+    margin-top: 98px;
+    padding: 65px;
+    display: flex;
+    justify-content: space-between;
+    color: #4A4A4A;
+}
+
+.contact-page .flex-1,
+.contact-page .flex-2 {
+    width: 48%;
+}
+
+.contact-page .flex-1 img {
+    width: 100%;
+}
+
+.contact-page h1 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+.contact-page h2 {
+    font-size: 20px;
+}
+
+.contact-page h3 {
+    font-size: 20px;
+    line-height: 1.6em;
+    font-weight: 600;
+    margin-top: 25px;
+}
+
+.contact-page h3 span {
+    font-weight: 400;
+}
+
+.contact-page form {
+    margin-top: 50px;
+}
+
+.contact-page form input,
+.contact-page form textarea {
+    width: 350px;
+    padding: 20px;
+    margin-bottom: 25px;
+    border: solid 1px #4A4A4A;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    display: block;
+}
+
+.contact-page #submit {
+    background: #FF584D;
+    color: #fff;
+    width: 392px;
+    border: none;
+}
+
+.contact-page #submit:hover {
+    background: #000;
+}
+
+/*Footer*/
+
+footer {
+
+    padding: 65px 65px 45px 65px;
+
+    background-image: url('../img/generic/footer.jpg');
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+footer .contact {
+    width: 50%;
+    border-right: solid 1px #fff;
+    overflow: hidden;
+}
+
+footer h1 {
+    color: #FF584D;
+    font-size: 36px;
+    line-height: 1.2em;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+footer .contact h2 {
+    color: #cecece;
+    font-size: 12px;
+    line-height: 1.7em;
+    width: 240px;
+    float: left;
+}
+
+footer .contact h2 a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+footer .contact h2 a:hover {
+    color: #FF584D;
+}
+
+footer .credits {
+    overflow: hidden;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 150px;
+}
+
+footer .credits h3 {
+    float: left;
+    margin-top: 24px;
+}
+
+footer .credits h4 {
+    float: right;
+}
+
+footer .credits h4 img {
+    width: 145px;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+
+
+.lang-img {
+	float: right;
+	vertical-align: middle;
+	margin-left: 10px;
+	}
+	
+.lang-font {
+	float: right;
+	vertical-align: middle;
+	margin-left: 10px;
+	font-size:15px;
+	color:white;
+	text-decoration:none;
+	}
+	
+	
+	
+	
+
+
+
+
+
+
+
+.dropbtn {
+  color: #dc3545;
+  background-color: transparent;
+  background-image: none;
+  border-color: #dc3545;
+  border:2px solid #ff584d;
+  border-radius: 10px;
+  font-size: 16px;
+  color: white;
+  font-size: 16px;
+    padding: 14px 28px;
+
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  color: #fff;
+  background-color: #dc3545;
+  border-color: #dc3545;
+  }
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+
+
+	
+	
+
+/*Responsiveness*/
+
+
+/*	Less than 1020 Laptop */
+
+@media (max-width: 1650px) {
+
+    .homepage-about .flex-1 h2 {
+        font-size: 28px;
+    }
+
+    .homepage-about .flex-1 p {
+        font-size: 16px;
+    }
+
+    .product-list h2 {
+        font-size: 20px;
+    }
+
+    .product-list p {
+        font-size: 14px;
+    }
+
+    .aboutus-company h1 {
+        font-size: 18px;
+    }
+
+    .aboutus-company h2 {
+        font-size: 22px;
+        line-height: 1.7em;
+        width: 50%;
+    }
+
+    .aboutus-company p {
+        font-size: 18px;
+        line-height: 1.7em;
+        color: #4A4A4A;
+    }
+
+    .aboutus-company .side-image {
+        width: 400px;
+    }
+
+    .aboutus-company-keystosuccess p {
+        font-size: 15px;
+        line-height: 2.3em;
+    }
+
+    .aboutus-founders p {
+        max-width: 440px;
+    }
+
+    .contact-page h1 {
+        font-size: 30px;
+    }
+
+    .contact-page h2 {
+        font-size: 16px;
+    }
+
+    .contact-page h3 {
+        font-size: 16px;
+    }
+
+}
+
+
+/*	Less than 1100 iPad */
+
+@media (max-width: 1100px) {
+
+    .desktop-nav {
+        display: none;
+    }
+
+    #burger-button {
+        display: block;
+    }
+
+    nav .flex-1 {
+        margin-left: 40px;
+    }
+
+    .page-padding {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .homepage-intro h1 {
+        width: 450px;
+        margin-top: -80px;
+        font-size: 40px;
+        left: 50%;
+        margin-left: -225px;
+        height: 210px;
+    }
+
+
+    .homepage-about .flex-1 {
+        width: 60%;
+    }
+
+    .homepage-about .flex-2 {
+        height: 70vh;
+        width: 35%;
+    }
+
+    .homepage-about .flex-1 h1 {
+        font-size: 18px;
+    }
+
+    .homepage-about .flex-1 h2 {
+        font-size: 25px;
+        line-height: 1.3em;
+    }
+
+    .homepage-about .flex-1 p {
+        font-size: 16px;
+        line-height: 1.5em;
+    }
+
+    .homepage-services h2 {
+        font-size: 14px;
+    }
+
+    .homepage-contact h1 {
+        font-size: 120px;
+        width: 100%;
+        margin-top: 190px;
+    }
+
+    .homepage-contact p {
+        font-size: 14px;
+        line-height: 1.8em;
+        width: 400px;
+    }
+
+    .homepage-contact h3 {
+        font-size: 14px;
+    }
+
+    .page-intro h1 {
+        font-size: 36px;
+        margin-top: -20px;
+        height: 40px;
+    }
+
+    .product-list h2 {
+        font-size: 16px;
+        line-height: 1.4em;
+        margin: 45px 0 20px 0;
+    }
+
+    .product-list p {
+        font-size: 14px;
+        line-height: 1.7em;
+        margin: 20px 0;
+    }
+
+    .CTA-section h2 {
+        font-size: 30px;
+    }
+
+    .CTA-section p {
+        font-size: 14px;
+        max-width: 550px;
+    }
+
+    .aboutus-company {
+        padding: 40px;
+    }
+
+    .aboutus-company h1 {
+        font-size: 18px;
+    }
+
+    .aboutus-company h2 {
+        font-size: 20px;
+        line-height: 1.55em;
+        width: 50%;
+    }
+
+    .aboutus-company p {
+        font-size: 15px;
+        line-height: 1.7em;
+    }
+
+    .aboutus-company .side-image {
+        width: 100%;
+    }
+
+    .aboutus-company .objectives h2,
+    .aboutus-company .mission h2 {
+        width: 100%;
+    }
+
+    .aboutus-company .objectives h1 {
+        margin-top: 10px;
+    }
+
+    .aboutus-company .objectives .side-image {
+        margin-top: 0px;
+    }
+
+    .aboutus-company .mission .side-image {
+        margin-bottom: 75px;
+    }
+
+    .aboutus-company-keystosuccess {
+        padding: 65px 40px;
+    }
+
+    .aboutus-company-keystosuccess > img {
+        width: 100%;
+        float: left;
+        margin-left: 0;
+        margin-bottom: 60px;
+    }
+
+    .aboutus-founders {
+        padding: 40px 40px 65px 40px;
+    }
+
+    .aboutus-founders .flex-1,
+    .aboutus-founders .flex-2 {
+        width: 50%;
+    }
+
+    .aboutus-founders img {
+        width: 90%;
+    }
+
+    .aboutus-founders h1 {
+        font-size: 20px;
+    }
+
+    .aboutus-founders p {
+        font-size: 14px;
+        line-height: 1.9em;
+        color: #4A4A4A;
+        max-width: 290px;
+    }
+
+    .aboutus-founders p span {
+        font-weight: 600;
+        font-size: 16px;
+    }
+
+    .contact-page {
+        padding: 40px;
+    }
+
+    .contact-page .flex-1 {
+        width: 45%;
+    }
+
+    .contact-page .flex-2 {
+        width: 50%;
+    }
+
+    .contact-page h1 {
+        font-size: 26px;
+    }
+
+    .contact-page h2 {
+        font-size: 14px;
+    }
+
+    .contact-page h3 {
+        font-size: 14px;
+    }
+
+    .contact-page form input,
+    .contact-page form textarea {
+        width: 250px;
+        font-size: 12px;
+    }
+
+    .contact-page #submit {
+        width: 292px;
+        font-size: 12px;
+    }
+
+    footer {
+        padding: 65px 40px 45px 40px;
+    }
+
+    footer .contact h2 {
+        margin-top: 20px;
+    }
+
+}
+
+
+/*	Less than 700 Mobile */
+
+@media (max-width: 700px) {
+
+    nav .flex-1 p {
+        display: none;
+    }
+
+    .homepage-intro h1 {
+        width: 300px;
+        margin-top: -55px;
+        font-size: 30px;
+        margin-left: -150px;
+        height: 155px;
+    }
+
+    .homepage-about .flex-1 {
+        width: 100%;
+    }
+
+    .homepage-about .flex-2 {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .homepage-services h2 {
+        font-size: 11px;
+        line-height: 1.3em;
+        width: 130px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .homepage-contact {
+        padding: 0;
+    }
+
+    .homepage-contact h1 {
+        font-size: 60px;
+        margin-top: 120px;
+    }
+
+    .homepage-contact .half-section {
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .homepage-contact h2 {
+        color: #FF584D;
+        font-size: 30px;
+        line-height: 1.2em;
+        font-weight: 600;
+        margin-top: 100px;
+    }
+
+    .homepage-contact p {
+        font-size: 14px;
+        line-height: 1.7em;
+        margin: 30px auto;
+        max-width: 340px;
+    }
+
+    .homepage-contact .letstalk div {
+        width: 250px;
+        margin: 0 auto 40px auto;
+    }
+
+    .homepage-contact .border {
+        height: 80px;
+        border-left: none;
+    }
+
+    .page-intro h1 {
+        font-size: 26px;
+        margin-top: -13px;
+        height: 26px;
+    }
+
+    .product-list {
+        padding: 40px;
+    }
+
+    .product-list .container {
+        display: block;
+    }
+
+    .product-list .container > div {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .about-nav {
+        width: 320px;
+        margin-left: -160px;
+    }
+    
+    .aboutus-company h2 {
+        width: 100%;
+    }
+    
+    .aboutus-founders .container {
+        display: block;
+    }
+    
+    .aboutus-founders .flex-1,
+    .aboutus-founders .flex-2 {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .aboutus-founders img {
+        width: 100%;
+    }
+    
+    .contact-page {
+        display: block;
+    }
+    
+    .contact-page .flex-1 {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .contact-page .flex-2 {
+        width: 100%;
+    }
+
+    .contact-page h1 {
+        font-size: 26px;
+    }
+
+    .contact-page h2 {
+        font-size: 14px;
+    }
+
+    .contact-page h3 {
+        font-size: 14px;
+    }
+
+    .contact-page form input,
+    .contact-page form textarea {
+        width: 250px;
+        font-size: 12px;
+    }
+
+    .contact-page #submit {
+        width: 292px;
+        font-size: 12px;
+    }
+
+    footer .contact {
+        width: 100%;
+        border-right: none;
+    }
+
+    footer .contact h2 {
+        font-size: 14px;
+    }
+
+    footer .credits {
+        margin-top: 100px;
+    }
+
+    footer .credits h3 {
+        float: left;
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+
+    footer .credits h4 {
+        float: left;
+    }
+
+
+}
