@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <title>Green - Electromechanical Projects</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+    <link rel="shortcut icon" type="image/png" href="img/generic/favicon.png" />
+
+    <!--fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,800" rel="stylesheet">
+    
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/hamburgers.css" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+    <nav>
+
+        <div class="flex-1">
+            <a href="index.html"><img src="img/generic/green-logo-white.svg"></a>
+            <p>Electromechanical Projects</p>
+        </div>
+
+        <ul class="flex-2 desktop-nav">
+            <a href="index.html">
+                <li>Home</li>
+            </a>
+
+            <a href="products.html">
+                <li>Products + Services</li>
+            </a>
+
+            <a href="aboutus-company.html">
+                <li>About</li>
+            </a>
+
+            <a href="contact.html">
+                <li class="current-page">Contact</li>
+            </a>
+        </ul>
+
+        <div class="hamburger hamburger--3dy" type="button" id="burger-button">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </div>
+
+        <div id="mobileMenu" class="mobileMenuInactive">
+
+            <ul id="mobileMenuUl" class="UlTransparent">
+
+                <a href="index.html">
+                    <li>Home</li>
+                </a>
+
+                <a href="products.html">
+                    <li>Products + Services</li>
+                </a>
+
+                <a href="aboutus-company.html">
+                    <li>About</li>
+                </a>
+
+                <a href="contact.html">
+                    <li class="current-page">Contact</li>
+                </a>
+
+            </ul>
+
+        </div>
+
+    </nav>
+    
+    <section class="contact-page">
+        
+        <div class="flex-1">
+            <img src="img/contact/contact.jpg">
+        </div>
+        
+        <div class="flex-2">
+            <h1>Contact Us</h1>
+            <h2>For inquiries, please get in touch with us:</h2>
+            <h3>E-mail<br><span>info@greenemp.com</span></h3>
+            <h3>Tel<br><span>+202 2065 0337</span></h3>
+            <h3>Address<br><span>27 Elmoltaka Elaraby - Masaken Sheraton - Cairo - Egypt</span></h3>
+            <h3>Or e-mail us using the form:</h3>
+            
+            <form action="https://formspree.io/info@greenemp.com" method="POST">
+                <input class="input" type="text" name="name" placeholder="Full Name">
+                <input class="input" type="email" name="email" placeholder="E-mail">
+                <textarea name="message" placeholder="Message"></textarea>
+                <input id="submit" type="submit" value="Submit">
+            </form>
+            
+            
+        </div>
+        
+    </section>
+    
+    <footer>
+        
+        <div class="contact">
+            <h1>Want to work<br>with us?</h1>
+            <h2>General Inquiries:<br><a href="mailto:info@greenemp.com">info@greenemp.com</a></h2>
+            <h2>LinkedIn<br><a href="https://www.linkedin.com/company/green-electromechanical-projects/?viewAsMember=true" target="_blank">Open Link</a></h2>
+        </div>
+   
+
+  <div class="dropdown lang-img">
+  <button onclick="myFunction()" class="dropbtn">أختار اللغة</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#">ENGLISH</a>
+    <a href="ar/contact.html">عربي</a>
+  </div>
+</div>
+
+
+   
+        <div class="credits">
+            <h3>COPYRIGHT 2019. ALL RIGHTS RESERVED</h3>
+            <h4>Developed by <a href="http://letterlust.studio" target="_blank"><img src="img/generic/letterlust_logo_white.svg"></a></h4>
+        </div>
+        
+    </footer>
+	
+ 	<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>   
+    
+    
+    <!--Hamburger Button Animation-->
+
+    <script>
+        // Look for .hamburger
+        var hamburger = document.querySelector(".hamburger");
+        var mobileMenu = document.querySelector("#mobileMenu");
+        var mobileMenuUl = document.querySelector("#mobileMenuUl");
+        // On click
+        hamburger.addEventListener("click", function() {
+            // Toggle class "is-active"
+            hamburger.classList.toggle("is-active");
+            // Open Menu
+            mobileMenu.classList.toggle("mobileMenuActive");
+            // Show Links
+            mobileMenuUl.classList.toggle("UlOpaque");
+        });
+    </script>
+
+
+
+
+
+</body>
+
+</html>
