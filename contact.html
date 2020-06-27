@@ -15,6 +15,9 @@
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/hamburgers.css" rel="stylesheet">
+	
+		<link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300&display=swap" rel="stylesheet">
+
 
 </head>
 
@@ -30,20 +33,21 @@
 
         <ul class="flex-2 desktop-nav">
             <a href="index.html">
-                <li>Home</li>
+                <li class="current-page">الصفحة الرئيسية</li>
             </a>
 
             <a href="products.html">
-                <li>Products + Services</li>
+                <li>الخدمات والمنتجات</li>
             </a>
 
             <a href="aboutus-company.html">
-                <li>About</li>
+                <li>عن الشركة</li>
             </a>
 
             <a href="contact.html">
-                <li class="current-page">Contact</li>
+                <li>أتصل بنا</li>
             </a>
+    
         </ul>
 
         <div class="hamburger hamburger--3dy" type="button" id="burger-button">
@@ -56,21 +60,21 @@
 
             <ul id="mobileMenuUl" class="UlTransparent">
 
-                <a href="index.html">
-                    <li>Home</li>
-                </a>
+             <a href="index.html">
+                <li class="current-page">الصفحة الرئيسية</li>
+            </a>
 
-                <a href="products.html">
-                    <li>Products + Services</li>
-                </a>
+            <a href="products.html">
+                <li>الخدمات والمنتجات</li>
+            </a>
 
-                <a href="aboutus-company.html">
-                    <li>About</li>
-                </a>
+            <a href="aboutus-company.html">
+                <li>عن الشركة</li>
+            </a>
 
-                <a href="contact.html">
-                    <li class="current-page">Contact</li>
-                </a>
+            <a href="contact.html">
+                <li>أتصل بنا</li>
+            </a>
 
             </ul>
 
@@ -78,25 +82,25 @@
 
     </nav>
     
-    <section class="contact-page">
+    <section class="contact-page"  dir="rtl">
         
         <div class="flex-1">
             <img src="img/contact/contact.jpg">
         </div>
         
         <div class="flex-2">
-            <h1>Contact Us</h1>
-            <h2>For inquiries, please get in touch with us:</h2>
-            <h3>E-mail<br><span>info@greenemp.com</span></h3>
-            <h3>Tel<br><span>+202 2065 0337</span></h3>
-            <h3>Address<br><span>27 Elmoltaka Elaraby - Masaken Sheraton - Cairo - Egypt</span></h3>
-            <h3>Or e-mail us using the form:</h3>
+            <h1>اتصل بنا</h1>
+            <h2>للاستفسارات ، يرجى التواصل معنا:</h2>
+            <h3>البريد الإلكتروني<br><span>info@greenemp.com</span></h3>
+            <h3>هاتف<br> <span   dir="ltr">  +202 2065 0337  </span></h3>
+            <h3>العنوان<br><span>27 الملتقى العربي - مساكن شيراتون - القاهرة - مصر</span></h3>
+            <h3>أو راسلنا بالبريد الإلكتروني باستخدام النموذج التالى:</h3>
             
             <form action="https://formspree.io/info@greenemp.com" method="POST">
-                <input class="input" type="text" name="name" placeholder="Full Name">
-                <input class="input" type="email" name="email" placeholder="E-mail">
-                <textarea name="message" placeholder="Message"></textarea>
-                <input id="submit" type="submit" value="Submit">
+                <input class="input" type="text" name="name" placeholder="الأسم بالكامل">
+                <input class="input" type="email" name="email" placeholder="البريد الألكتروني">
+                <textarea name="message" placeholder="الرسالة"></textarea>
+                <input id="submit" type="submit" value="أرسال">
             </form>
             
             
@@ -106,31 +110,28 @@
     
     <footer>
         
-        <div class="contact">
-            <h1>Want to work<br>with us?</h1>
-            <h2>General Inquiries:<br><a href="mailto:info@greenemp.com">info@greenemp.com</a></h2>
+    <div class="contact" >
+            <h1 >انضم لفريق العمل؟</h1>
+            <h2>للاستفسارات :<br><a href="mailto:info@greenemp.com">info@greenemp.com</a></h2>
             <h2>LinkedIn<br><a href="https://www.linkedin.com/company/green-electromechanical-projects/?viewAsMember=true" target="_blank">Open Link</a></h2>
         </div>
-   
-
-  <div class="dropdown lang-img">
-  <button onclick="myFunction()" class="dropbtn">أختار اللغة</button>
-  <div id="myDropdown" class="dropdown-content">
-    <a href="#">ENGLISH</a>
-    <a href="ar/contact.html">عربي</a>
-  </div>
-</div>
-
-
-   
+		
+  		   <div class="dropdown lang-img">
+		  <button onclick="myFunction()" class="dropbtn">Choose language</button>
+		  <div id="myDropdown" class="dropdown-content">
+			<a href="#">عربي</a>
+			<a href="../contact.html">ENGLISH</a>
+		  </div>
+		</div> 
+		
         <div class="credits">
             <h3>COPYRIGHT 2019. ALL RIGHTS RESERVED</h3>
             <h4>Developed by <a href="http://letterlust.studio" target="_blank"><img src="img/generic/letterlust_logo_white.svg"></a></h4>
         </div>
         
     </footer>
-	
- 	<script>
+    
+	<script>
 /* When the user clicks on the button, 
 toggle between hiding and showing the dropdown content */
 function myFunction() {
@@ -150,8 +151,7 @@ window.onclick = function(event) {
     }
   }
 }
-</script>   
-    
+</script>    
     
     <!--Hamburger Button Animation-->
 
